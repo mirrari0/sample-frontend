@@ -1,25 +1,39 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <div className={'objects'}>
+          <h1>Registration</h1>
+        </div>
+        <div className={'objects'}>
+          <label>Phone Number: </label>
+          <input id={'Phone Number'}/>
+        </div>
+        <div className={'objects'}>
+          <label>Name : </label>
+          <input id={'Phone Number'} type={'number'}/>
+        </div>
+        <div className={'objects'}>
+          <label>Game Night
+            <input id={'check'} type={'checkbox'}/>
+          </label>
+        </div>
+        <div className={'objects'}>
+          <label>D&D - Super Awesome Campaign one
+            <input id={'check'} type={'checkbox'}/>
+          </label>
+        </div>
+        <div className={'objects'}>
+          <label>D&D - Super Awesome Campaign two
+            <input id={'check'} type={'checkbox'}/>
+          </label>
+        </div>
+        <div className={'objects'}>
+          <button id={'submit'}>Submit</button>
+        </div>
       </div>
     );
   }
